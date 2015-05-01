@@ -1,29 +1,20 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_repeat" id="277" inline="true" x="-114" y="258">
-    <value name="TIMES">
-      <block type="math_number" id="296">
-        <field name="NUM">5</field>
-      </block>
-    </value>
-    <statement name="DO">
-      <block type="movement_forward" id="61">
-        <next>
-          <block type="robot_delay" id="95" inline="true">
-            <value name="DELAY">
-              <block type="math_number" id="102">
-                <field name="NUM">1000</field>
-              </block>
-            </value>
-          </block>
-        </next>
-      </block>
-    </statement>
-    <next>
-      <block type="movement_stop" id="313"></block>
-    </next>
-  </block>
   <block type="oled_color" id="158" x="-296" y="358">
     <field name="OBJECT">GREEN</field>
+  </block>
+  <block type="movement_forward" id="61" x="-63" y="349">
+    <next>
+      <block type="robot_delay" id="95" inline="true">
+        <value name="DELAY">
+          <block type="math_number" id="102">
+            <field name="NUM">1000</field>
+          </block>
+        </value>
+        <next>
+          <block type="movement_stop" id="392"></block>
+        </next>
+      </block>
+    </next>
   </block>
   <block type="sensor_spectrometer" id="117" x="-353" y="413">
     <field name="LIGHT">IR880</field>
