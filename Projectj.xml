@@ -1,74 +1,38 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="movement_forward" id="1" x="126" y="186">
-    <next>
-      <block type="robot_delay" id="2" inline="true">
-        <value name="DELAY">
-          <block type="math_number" id="3">
-            <field name="NUM">5000</field>
-          </block>
-        </value>
+  <block type="controls_repeat" id="277" inline="true" x="-114" y="258">
+    <value name="TIMES">
+      <block type="math_number" id="296">
+        <field name="NUM">5</field>
+      </block>
+    </value>
+    <statement name="DO">
+      <block type="movement_forward" id="61">
         <next>
-          <block type="movement_left" id="4">
+          <block type="robot_delay" id="95" inline="true">
+            <value name="DELAY">
+              <block type="math_number" id="102">
+                <field name="NUM">1000</field>
+              </block>
+            </value>
             <next>
-              <block type="movement_left" id="23">
-                <next>
-                  <block type="robot_delay" id="5" inline="true">
-                    <value name="DELAY">
-                      <block type="math_number" id="6">
-                        <field name="NUM">1000</field>
-                      </block>
-                    </value>
-                    <next>
-                      <block type="movement_forward" id="7">
-                        <next>
-                          <block type="robot_delay" id="8" inline="true">
-                            <value name="DELAY">
-                              <block type="math_number" id="9">
-                                <field name="NUM">5000</field>
-                              </block>
-                            </value>
-                            <next>
-                              <block type="movement_left" id="10">
-                                <next>
-                                  <block type="movement_left" id="33">
-                                    <next>
-                                      <block type="robot_delay" id="11" inline="true">
-                                        <value name="DELAY">
-                                          <block type="math_number" id="12">
-                                            <field name="NUM">1000</field>
-                                          </block>
-                                        </value>
-                                        <next>
-                                          <block type="movement_forward" id="34">
-                                            <next>
-                                              <block type="robot_delay" id="35" inline="true">
-                                                <value name="DELAY">
-                                                  <block type="math_number" id="36">
-                                                    <field name="NUM">5000</field>
-                                                  </block>
-                                                </value>
-                                              </block>
-                                            </next>
-                                          </block>
-                                        </next>
-                                      </block>
-                                    </next>
-                                  </block>
-                                </next>
-                              </block>
-                            </next>
-                          </block>
-                        </next>
-                      </block>
-                    </next>
+              <block type="led_select" id="149" inline="true">
+                <field name="ACTION">FLASH</field>
+                <value name="LED">
+                  <block type="sensor_spectrometer" id="259">
+                    <field name="LIGHT">RED</field>
                   </block>
-                </next>
+                </value>
               </block>
             </next>
           </block>
         </next>
       </block>
-    </next>
+    </statement>
   </block>
-  <block type="movement_forward" id="61" x="-126" y="405"></block>
+  <block type="oled_color" id="158" x="-296" y="358">
+    <field name="OBJECT">GREEN</field>
+  </block>
+  <block type="sensor_spectrometer" id="117" x="-353" y="413">
+    <field name="LIGHT">IR880</field>
+  </block>
 </xml>
