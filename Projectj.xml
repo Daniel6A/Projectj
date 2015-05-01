@@ -47,47 +47,6 @@
                                                     <field name="NUM">5000</field>
                                                   </block>
                                                 </value>
-                                                <next>
-                                                  <block type="movement_left" id="38">
-                                                    <next>
-                                                      <block type="movement_left" id="37">
-                                                        <next>
-                                                          <block type="robot_delay" id="73" inline="true">
-                                                            <value name="DELAY">
-                                                              <block type="math_number" id="74">
-                                                                <field name="NUM">1000</field>
-                                                              </block>
-                                                            </value>
-                                                            <next>
-                                                              <block type="movement_forward" id="39">
-                                                                <next>
-                                                                  <block type="robot_delay" id="40" inline="true">
-                                                                    <value name="DELAY">
-                                                                      <block type="math_number" id="41">
-                                                                        <field name="NUM">5000</field>
-                                                                      </block>
-                                                                    </value>
-                                                                    <next>
-                                                                      <block type="movement_left" id="51">
-                                                                        <next>
-                                                                          <block type="movement_left" id="72">
-                                                                            <next>
-                                                                              <block type="movement_stop" id="13"></block>
-                                                                            </next>
-                                                                          </block>
-                                                                        </next>
-                                                                      </block>
-                                                                    </next>
-                                                                  </block>
-                                                                </next>
-                                                              </block>
-                                                            </next>
-                                                          </block>
-                                                        </next>
-                                                      </block>
-                                                    </next>
-                                                  </block>
-                                                </next>
                                               </block>
                                             </next>
                                           </block>
